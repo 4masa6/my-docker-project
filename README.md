@@ -63,8 +63,7 @@ php artisan migrate
 ### LaravelBreezeのインストール
 
 ```bash
-docker-compose exec php /bin/bash
-cd src
+docker-compose exec app bash
 composer require laravel/breeze "1.*" --dev
 php artisan breeze:install
 npm install && npm run dev
@@ -73,5 +72,5 @@ npm install && npm run dev
 - URL
 `http://127.0.0.1:80`
 
-- ## phpMyAdminに接続
+- phpMyAdminに接続
 `http://127.0.0.1:8086`
